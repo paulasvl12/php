@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Place your Order</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" >
+    
+  </head>
+  <body>
+
+<form class="personalinfo">
+
+<div class="form-group">
+      <label for="firstname"> First Name* </label>
+      <input type="text" class= "form-control" name="firstname" required>
+  </div>
+  <div class="form-group">
+      <label for="lastname"> Last Name* </label>
+      <input type="text" class= "form-control" name="email" required>
+  </div>
+  <div class="form-group">
+      <label for="phone"> Phone Number* </label>
+      <input type="tel" class= "form-control" name="phone"  required>
+  </div>
+  <div class="form-group">
+      <label for="address"> Street address* </label>
+      <input type="text" class= "form-control"  name="address" required>
+  </div>
+
+
+</form>
+
+<form class="order">
+<div>
+  <label for="crust"> Select your type of Crust </label>
+  <input type="text" name="crust" list="crustType">
+    <datalist id="crustType">
+        <option value= "Hand Tossed - Regular " />
+        <option value= "Extra Thin" />
+        <option value= "Extra Cheesy " />
+        <option value= "Gluten free " />
+    </datalist>
+</div>
+
+<div>
+    <label for="sauce"> Select your type of Sauce </label>
+    <input type="text" name="sauce" list="sauceType">
+      <datalist id="sauceType">
+          <option value= "Marinara " />
+          <option value= "Alfredo" />
+          <option value= "No Sauce " />
+      </datalist>
+</div>
+
+
+</form>
+
+
+<button type="submit"> <a href="placed.html"> Place My Order </a> </button>
+<button type="reset"> Cancel </button>
+<button onclick="goBack()">Go Back to Homepage</button>
+
+<script>
+function goBack() {
+  location.href = "index.php";
+}
+</script>
+
+
+
+
+  </body>
+</html>

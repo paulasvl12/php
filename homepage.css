@@ -1,0 +1,15 @@
+button {
+margin-bottom: 10px;
+
+}
+
+nav {
+  background-color: black;
+
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+/* Change the link color to #111 (black) on hover */
